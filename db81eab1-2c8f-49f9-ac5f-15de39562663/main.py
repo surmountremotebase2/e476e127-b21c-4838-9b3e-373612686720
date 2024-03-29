@@ -6,7 +6,7 @@ from surmount.data import Asset, InstitutionalOwnership, InsiderTrading
 class TradingStrategy(Strategy):
 
     def __init__(self):
-        self.tickers = ["SPY", "QQQ", "AAPL", "GOOGL"]
+        self.tickers = ["BTCUSDT"] #"SPY", "QQQ", "AAPL", "GOOGL",
         self.data_list = [InstitutionalOwnership(i) for i in self.tickers]
         self.data_list += [InsiderTrading(i) for i in self.tickers]
 
